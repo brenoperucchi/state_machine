@@ -381,7 +381,7 @@ module StateMachine
           end
           
           default_options = default_error_message_options(object, attribute, message)
-          object.errors.add(attribute, message, options.merge(default_options))
+          object.errors.add(attribute, message, **options.merge(default_options))
         end
       end
       
