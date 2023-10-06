@@ -401,6 +401,7 @@ module StateMachine
         object.class.state_machines.transitions(object, action, :after => false).perform { yield }
       end
 
+      
       protected
         # Whether observers are supported in the integration.  Only true if
         # ActiveModel::Observer is available.
